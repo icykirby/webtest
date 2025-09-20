@@ -1,0 +1,176 @@
+html {
+    margin: 0;
+    
+}
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    overflow: hidden;
+    font-family: "FredokaOne-Regular", sans-serif;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: "FredokaOne-Regular";
+    src: url("fonts/FredokaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+input {
+    height: 40px;
+    width: 200px;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-family: "FredokaOne-Regular", sans-serif;
+    font-size: 18px;
+    color: rgb(44, 44, 44);
+    
+}
+button {
+    height: 50px;
+    width: 200px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgb(110, 198, 208);
+    font-family: "FredokaOne-Regular", sans-serif;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.topBar {
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(110, 198, 208);
+    border-bottom: solid 10px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topBar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 60px);
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.leftBox {
+    flex: 1;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rulerBox {
+    width: calc(100% - 20px);
+    height: 20px;
+    background-color: rgb(225, 224, 222);
+    flex-shrink: 0;
+    margin-left: 20px; 
+}
+
+.mapBox {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(44, 44, 44);
+    position: relative;
+}
+
+.rulerBoxY {
+    width: 20px;
+    height: calc(100%);
+    background-color:  rgb(225, 224, 222);
+    flex-shrink: 0;
+    
+    left: 0; 
+    position: absolute;
+}
+
+.canvasContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapControls {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    padding: 20px;
+    background-color:  rgb(44, 44, 44);
+    flex-shrink: 0;
+}
+
+canvas {
+    border: 1px solid  white;
+    display: block;
+    
+}
+
+.statBox {
+    height: 150px;
+    width: 100%;
+    background-color:  rgb(44, 44, 44);
+    flex-shrink: 0;
+    border-top: solid 1px white;
+}
+
+.rightBox {
+    width: 300px;
+    background-color: rgb(58, 60, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: solid 1px rgb(255, 255, 255);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+.compassBox {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.miniBox {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
